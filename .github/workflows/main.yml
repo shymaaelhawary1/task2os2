@@ -13,6 +13,8 @@ jobs:
 
 
     steps: 
-      - name: 'testing printing'
+      - name: 'testing printing before'
         run: ls
-      
+      - uses: actions/checkout@v3
+      - name: 'testing printing after'
+        run: ls
